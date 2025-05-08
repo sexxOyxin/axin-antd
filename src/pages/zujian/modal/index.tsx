@@ -8,7 +8,7 @@ const App: React.FC = () => {
     <div className='zujian-description'>
     <h3>弹窗对话框 · Modal</h3>
     <p>封装了 Card 组件，增加了 nsextra 属性，集成了复制到剪切板的功能</p>
-    <p> 其他的配置参考 ：<a href="https://ant.design/components/card-cn/">Antd Card</a></p>
+    <p> 其他的配置参考 ：<a href="https://ant.design/components/modal-cn/">Antd Modal</a></p>
     <br/>
     </div>
     <CustomModal />
