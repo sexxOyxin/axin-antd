@@ -1,0 +1,10 @@
+.demo-logo {
+  height: 32px;
+  background: hsla(0, 0%, 100%, 0.2);
+  margin: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
