@@ -9,6 +9,7 @@ import { Layout, Menu, theme } from 'antd';
 import './index.css'
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import AxinCard from '@/pages/zujian/card';
+import AxinModal from '@/pages/zujian/modal'
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -24,7 +25,6 @@ const siderStyle: React.CSSProperties = {
 };
 
 const HomePage = () => <div>首页内容</div>;
-const ModalPage = () => <div>弹窗组件内容</div>;
 const DemoPage = () => <div>组件Demo内容</div>;
 
 const items: MenuProps['items'] = [
@@ -68,7 +68,7 @@ const App: React.FC = () => {
             <Routes>
               <Route path="/shouye" element={<HomePage />} />
               <Route path="/zujian/card" element={<AxinCard />} />
-              <Route path="/zujian/modal" element={<ModalPage />} />
+              <Route path="/zujian/modal" element={<AxinModal />} />
               <Route path="/zjdemo" element={<DemoPage />} />
             </Routes>
           </div>

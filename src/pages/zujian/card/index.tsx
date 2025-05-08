@@ -1,6 +1,7 @@
 import React from 'react';
 import CustomCard from './CustomCard';
 import { Col, Row } from 'antd';
+import '../index.css'
 
 const App: React.FC = () => {
   const content1 = `
@@ -26,7 +27,7 @@ const App: React.FC = () => {
   `;
   return (
     <>
-    <div style={{textAlign: 'left', marginTop: -18}}>
+    <div className='zujian-description'>
     <h3>卡片 · Card</h3>
     <p>封装了 Card 组件，增加了 nsextra 属性，集成了复制到剪切板的功能</p>
     <p> 其他的配置参考 ：<a href="https://ant.design/components/card-cn/">Antd Card</a></p>
