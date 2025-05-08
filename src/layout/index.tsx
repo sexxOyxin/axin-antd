@@ -10,6 +10,8 @@ import './index.css'
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import AxinCard from '@/pages/zujian/card';
 import AxinModal from '@/pages/zujian/modal'
+import AxinForm from '@/pages/zujian/form'
+import AxinTable from '@/pages/zujian/table'
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -32,6 +34,8 @@ const items: MenuProps['items'] = [
   {key: 'zujian', icon: React.createElement(UserOutlined), label: '组件', children: [
     {key: 'zujian/card', label: '卡片 · Card'},
     {key: 'zujian/modal', label: '弹窗 · Modal'},
+    {key: 'zujian/form', label: '表单 · Form'},
+    {key: 'zujian/table', label: '表格 · Table'},
   ]},
   {key: 'zjdemo', icon: React.createElement(CloudOutlined), label: '组件demo'}
 ];
@@ -69,6 +73,8 @@ const App: React.FC = () => {
               <Route path="/shouye" element={<HomePage />} />
               <Route path="/zujian/card" element={<AxinCard />} />
               <Route path="/zujian/modal" element={<AxinModal />} />
+              <Route path="/zujian/form" element={<AxinForm />} />
+              <Route path="/zujian/table" element={<AxinTable />} />
               <Route path="/zjdemo" element={<DemoPage />} />
             </Routes>
           </div>
