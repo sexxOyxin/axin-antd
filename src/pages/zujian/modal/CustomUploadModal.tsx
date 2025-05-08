@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
 
-const App: React.FC = () => {
+interface CustomModalProps {
+  btnText: string;
+}
+
+interface WrapperProps {
+  props: CustomModalProps;
+}
+const App: React.FC<WrapperProps> = ({props: {btnText}}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModal = () => {
@@ -19,7 +26,7 @@ const App: React.FC = () => {
   return (
     <>
       <Button type="primary" onClick={showModal}>
-        Open Modal
+      {btnText}
       </Button>
       <Modal
         title="Basic Modal"
