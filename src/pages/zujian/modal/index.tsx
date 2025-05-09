@@ -6,16 +6,22 @@ import '../index.css'
 
 const App: React.FC = () => {
   const props1 = {
-    btnText: '上传excel'
+    btnText: '上传excel',
+    modalTitle: '标题可修改',
+    acceptType: '.xlsx,.xls',
+    uploadText: '单击或拖拽文件到此区域上传&&&&控制用户只能选择.xlsx或.xls结尾的文件',
   };
   const props2 = {
-    btnText: '上传excel'
+    btnText: '上传任意文件',
+    acceptType: '',
+    uploadText: '不限制上传类型',
   };
   const props3 = {
-    btnText: '多上传'
+    btnText: '多文件上传'
   };
   const props4 = {
-    btnText: '下载按钮'
+    btnText: '单文件上传',
+    multiple: false,
   };
   const props5 = {
     btnText: '下载按钮'
@@ -23,6 +29,7 @@ const App: React.FC = () => {
   const props6 = {
     btnText: '下载按钮'
   };
+// ttttdo 用nodejs写一下后端接口逻辑 
   return (
     <div className='zujian-description'>
       <h3>弹窗对话框 · Modal</h3>
