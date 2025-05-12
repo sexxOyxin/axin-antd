@@ -30,7 +30,6 @@ const CustomCard: React.FC<CustomCardProps> = ({ title, content, isVisualCopy = 
 
   return (
     <Card
-      className='custom-head-title'
       title={title}
       style={style}
       extra={isVisualCopy === null ? null :

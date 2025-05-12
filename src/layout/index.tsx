@@ -12,6 +12,7 @@ import AxinCard from '@/pages/zujian/card';
 import AxinModal from '@/pages/zujian/modal'
 import AxinForm from '@/pages/zujian/form'
 import AxinTable from '@/pages/zujian/table'
+import StartPage from '@/pages/shouye'
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -26,7 +27,6 @@ const siderStyle: React.CSSProperties = {
   scrollbarGutter: 'stable',
 };
 
-const HomePage = () => <div>首页内容</div>;
 const DemoPage = () => <div>组件Demo内容</div>;
 
 const items: MenuProps['items'] = [
@@ -64,13 +64,12 @@ const App: React.FC = () => {
           <div
             style={{
               padding: 24,
-              textAlign: 'center',
               background: colorBgContainer,
               borderRadius: borderRadiusLG,
             }}
           >
             <Routes>
-              <Route path="/shouye" element={<HomePage />} />
+              <Route path="/shouye" element={<StartPage />} />
               <Route path="/zujian/card" element={<AxinCard />} />
               <Route path="/zujian/modal" element={<AxinModal />} />
               <Route path="/zujian/form" element={<AxinForm />} />

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Col, Radio, Row, Slider, Space } from 'antd';
-import type { ConfigProviderProps } from 'antd';
+import { Col, Row } from 'antd';
 import CustomUploadModal from './CustomUploadModal';
 import '../index.css'
 
@@ -22,20 +21,16 @@ const App: React.FC = () => {
   const props4 = {
     btnText: '单文件上传',
     multiple: false,
+    uploadText: 'Click or drag file to this area to upload&&&&Support for a single upload. Strictly prohibited from uploading company data or other banned files.',
   };
-  const props5 = {
-    btnText: '下载按钮'
-  };
-  const props6 = {
-    btnText: '下载按钮'
-  };
-// ttttdo 用nodejs写一下后端接口逻辑 
+
   return (
     <div className='zujian-description'>
       <h3>弹窗对话框 · Modal</h3>
       <p>封装了 Card 组件，增加了 nsextra 属性，集成了复制到剪切板的功能</p>
       <p> 其他的配置参考 ：<a href="https://ant.design/components/modal-cn/">Antd Modal</a></p>
       <br />
+
       <Row gutter={32}>
         <Col span={12}>
           <h4>上传不同类别</h4>
