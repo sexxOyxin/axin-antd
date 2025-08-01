@@ -13,6 +13,7 @@ import AxinModal from '@/pages/zujian/modal'
 import AxinForm from '@/pages/zujian/form'
 import AxinTable from '@/pages/zujian/table'
 import StartPage from '@/pages/shouye'
+import BigUpload from '@/pages/file/bigupload'
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -37,7 +38,17 @@ const items: MenuProps['items'] = [
     {key: 'zujian/form', label: '表单 · Form'},
     {key: 'zujian/table', label: '表格 · Table'},
   ]},
-  {key: 'zjdemo', icon: React.createElement(CloudOutlined), label: '组件demo'}
+  {key: 'zjdemo', icon: React.createElement(CloudOutlined), label: '组件demo'},
+  {key: 'file', icon: React.createElement(CloudOutlined), label: '文件处理', children: [
+    {key: 'file/bigupload', label: '大文件上传'},
+    {key: 'file/export', label: '表格导出'},
+  ]},
+  {key: 'optimization', icon: React.createElement(CloudOutlined), label: '性能优化', children: [
+    {key: 'optimization/debounce', label: '防抖'},
+    {key: 'optimization/virtual', label: '虚拟列表'},
+    {key: 'optimization/flex', label: 'amfe-flexible'},
+    {key: 'optimization/bridge', label: 'JS Bridge'},
+  ]},
 ];
 
 const App: React.FC = () => {
@@ -75,6 +86,7 @@ const App: React.FC = () => {
               <Route path="/zujian/form" element={<AxinForm />} />
               <Route path="/zujian/table" element={<AxinTable />} />
               <Route path="/zjdemo" element={<DemoPage />} />
+              <Route path="/file/bigupload" element={<BigUpload />} />
             </Routes>
           </div>
         </Content>
