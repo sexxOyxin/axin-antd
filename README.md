@@ -18,3 +18,6 @@ npm run dev
 需要在package.json中配置dev： "dev": "vite --host 192.168.xx.xx"
 mac:ifconfig 查看en0中的inet 或者 wlan0下的inet
 在vite.config.ts中加上host: '0.0.0.0'，局域网+本地都运行
+
+# reduxSum
+npm i redux react-redux @reduxjs/toolkit
