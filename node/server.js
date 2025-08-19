@@ -75,7 +75,6 @@ app.get('/api/uploaded', (req, res) => {
 // 合并分片
 app.post('/api/merge', (req, res) => {
   const { filename, hash, total } = req.body;
-  debugger
 
   if (!filename || !hash || !total) return res.status(400).send('Missing merge params');
 
